@@ -1,0 +1,13 @@
+{
+    "name": "InstaScroll",
+    "version": "1.0",
+    "description": "Browser extension to suppress annoying layers of Instagram while scrolling public profile content.",
+    "manifest_version": 2,
+    "permissions": ["*://*.instagram.com/*"],
+    "content_scripts": [
+        {
+            "matches": ["*://*.instagram.com/*"],
+            "js": ["src.js"]
+        }
+    ]
+}
